@@ -27,10 +27,17 @@ cd Python-Reverse-Shell
 
 ### Install Dependencies
 
-Ensure you have Python 3.x installed. Then, install the required libraries:
+Ensure you have Python 3.x installed. Then, install the required libraries
+
+On Server:
 
 ```bash
-pip install pycryptodome pynput pyperclip browser-history pillow
+pip install pycryptodomex
+```
+
+On Client:
+```cmd
+pip install -r requirements.txt
 ```
 
 ## Usage
@@ -94,7 +101,7 @@ The client-side script is designed to operate as part of a client-server archite
 
 1. **Setup and Execution**:
    - Place the script on the client machine.
-   - Ensure that Python and required libraries (`pyinstaller`, `pynput`, `pyperclip`, `browser_history`, `pycryptodome`, `Pillow`) are installed.
+   - Ensure that Python and required libraries (`pyinstaller`, `pynput`, `pyperclip`, `browser_history`, `pycryptodomex`, `Pillow`) are installed.
    - Run the script using Python. It will handle initial setup tasks such as creating an executable and registering itself to run on startup.
 
 2. **Interaction with Server**:
